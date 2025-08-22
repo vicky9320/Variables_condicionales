@@ -1,0 +1,23 @@
+1. INICIO2.  
+2. LEER precio
+3.  LEER tarjeta (s/n)
+4.  descuento ← 0
+5.  INTENTAR
+6.      SI precio > 100000 ENTONCES
+7.          descuento ← descuento + 0.15
+8.      SINO SI 50000 ≤ precio ≤ 100000 ENTONCES
+9.          descuento ← descuento + 0.10
+10.     SINO SI 10000 ≤ precio ≤ 49999 ENTONCES
+11.         descuento ← descuento + 0.05
+12.     FIN SI
+13.     
+14.     SI tarjeta == 's' ENTONCES
+15.         descuento ← descuento + 0.05
+16.     FIN SI
+17.     
+18.     precio_final ← precio * (1 - descuento)
+19.     MOSTRAR "El precio final después de descuentos es", precio_final
+20.     MOSTRAR logo ASCII (888888…)
+21. CAPTURAR ValueError22.     
+22. MOSTRAR "Entrada inválida"
+23. FIN
