@@ -1,0 +1,113 @@
+1. INICIO
+
+2. MOSTRAR "=============================="
+
+3. MOSTRAR "🗳️ VERIFICADOR DE EDAD PARA VOTAR 🗳️"
+
+4. MOSTRAR "=============================="
+
+5. LEER edad
+
+6. LEER pais\_ingresado
+
+7. CONVERTIR pais\_ingresado A MINÚSCULAS -> pais
+
+8. SEGÚN pais HACER
+
+9. CASO "brasil":
+
+10. edad\_requerida <- 16
+
+11. SI edad >= edad\_requerida ENTONCES
+
+12. MOSTRAR "¡Felicidades! Puedes votar en Brasil."
+
+13. SI edad < 18 ENTONCES
+
+14. MOSTRAR "El voto es opcional para las personas de 16 y 17 años en Brasil."
+
+15. FIN\_SI
+
+16. SINO
+
+17. MOSTRAR "No puedes votar, la edad mínima es 16."
+
+18. FIN\_SI
+
+19. CASO "cuba":
+
+20. edad\_requerida <- 16
+
+21. SI edad >= edad\_requerida ENTONCES
+
+22. MOSTRAR "¡Felicidades! Puedes votar en Cuba."
+
+23. SINO
+
+24. MOSTRAR "No puedes votar, la edad mínima es 16."
+
+25. FIN\_SI
+
+26. CASO "indonesia":
+
+27. edad\_requerida <- 17
+
+28. SI edad >= edad\_requerida ENTONCES
+
+29. MOSTRAR "¡Felicidades! Puedes votar en Indonesia."
+
+30. SINO
+
+31. MOSTRAR "No puedes votar, la edad mínima es 17."
+
+32. FIN\_SI
+
+33. CASO "estados unidos", "colombia":
+
+34. edad\_requerida <- 18
+
+35. SI edad >= edad\_requerida ENTONCES
+
+36. MOSTRAR "¡Felicidades! Puedes votar en " + pais\_ingresado
+
+37. SINO
+
+38. MOSTRAR "No puedes votar, la edad mínima es 18."
+
+39. FIN\_SI
+
+40. CASO "corea del sur":
+
+41. edad\_requerida <- 18
+
+42. SI edad >= edad\_requerida ENTONCES
+
+43. MOSTRAR "¡Felicidades! Puedes votar en Corea del Sur."
+
+44. SINO
+
+45. MOSTRAR "No puedes votar, la edad mínima es 18."
+
+46. FIN\_SI
+
+47. CASO "singapur":
+
+48. edad\_requerida <- 21
+
+49. SI edad >= edad\_requerida ENTONCES
+
+50. MOSTRAR "¡Felicidades! Puedes votar en Singapur."
+
+51. SINO
+
+52. MOSTRAR "No puedes votar, la edad mínima es 21."
+
+53. FIN\_SI
+
+54. CASO CONTRARIO:
+
+55. MOSTRAR "El país ingresado no se encuentra en la base de datos."
+
+56. FIN\_SEGÚN
+
+57. FIN
