@@ -1,11 +1,11 @@
 # Programa para calcular el precio final de un producto con descuentos
 
-precio = int(input("Ingrese el precio del producto: "))
-tarjeta = input("¿Tiene tarjeta de fidelidad? (s/n): ").lower()
+precio = int(input("Ingrese el precio del producto: ")) #se le solicita al usuario que ingrese el valor del producto.
+tarjeta = input("¿Tiene tarjeta de fidelidad? (s/n): ").lower() #se le pregunta al usurio si tiene tajeta de fidelidad 
 
 descuento = 0
 try:
-		
+		#se hace un rango nuemrico por cada descuento y se va agregando a la variable descuento 
 	if precio > 100000:
 		descuento += 0.15
 	elif 50000 <= precio <= 100000:
@@ -16,7 +16,7 @@ try:
 	if tarjeta == 's':
 		descuento += 0.05
 
-	precio_final = precio * (1 - descuento)
+	precio_final = precio * (1 - descuento) 
 
 	print("El precio final después de descuentos es", precio_final)
 
