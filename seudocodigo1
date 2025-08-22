@@ -1,0 +1,33 @@
+1. INICIO2.  MOSTRAR encabezado "Calculadora de una operación"
+3.  MOSTRAR menú de opciones:
+        +. Sumar 1
+        -. Restar 2
+        *. Multiplicar 3
+        /. Dividir 4
+4.  PEDIR al usuario que ingrese una opción (1-4) → guardar en opcion
+5.  SI opcion está en ('1','2','3','4') ENTONCES
+6.      INTENTAR:
+7.          PEDIR al usuario el primer número → guardar en num1
+8.          PEDIR al usuario el segundo número → guardar en num2
+9.          SI opcion == '1' ENTONCES
+10.             resultado = num1 + num2
+11.             MOSTRAR "Resultado: num1 + num2 = resultado"
+12.          SINO SI opcion == '2' ENTONCES
+13.             resultado = num1 - num2
+14.             MOSTRAR "Resultado: num1 - num2 = resultado"
+15.          SINO SI opcion == '3' ENTONCES
+16.             resultado = num1 * num2
+17.             MOSTRAR "Resultado: num1 * num2 = resultado"
+18.          SINO SI opcion == '4' ENTONCES
+19.             SI num2 == 0 ENTONCES
+20.                 MOSTRAR "Error: No se puede dividir por cero"
+21.             SINO
+22.                 resultado = num1 / num2
+23.                 MOSTRAR "Resultado: num1 / num2 = resultado"
+24.             FIN SI
+25.      CAPTURAR error de entrada inválida
+26.          MOSTRAR "Entrada inválida. Ingresa solo números."
+27.  SINO
+28.      MOSTRAR "Opción no válida. Selecciona 1-4."
+29. MOSTRAR "El programa ha finalizado"
+30. FIN
