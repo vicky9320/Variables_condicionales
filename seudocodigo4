@@ -1,0 +1,34 @@
+Mostrar línea de separación "="*40.
+Mostrar título "CONVERSOR DE TEMPERATURA".
+Mostrar nuevamente línea de separación "="*40.
+Mostrar menú de opciones de escalas:
+Celsius
+Fahrenheit
+Kelvin
+Salir
+Leer opcion_origen.
+Si opcion_origen = 4
+Mostrar mensaje "Gracias por usar el conversor".
+Ir al paso 20 (fin del programa).
+Leer opcion_destino.
+Si opcion_destino = 4
+Mostrar mensaje "Gracias por usar el conversor".
+Ir al paso 20 (fin del programa).
+Si opcion_origen = opcion_destino
+Mostrar mensaje "Error: La escala de origen y destino no pueden ser la misma".
+Ir al paso 20.
+Leer valor_origen (temperatura a convertir).
+Si opcion_origen = 1 (Celsius)
+Si opcion_destino = 2 → resultado = (valor_origen * 9/5) + 32 → Mostrar en °F.
+Si opcion_destino = 3 → resultado = valor_origen + 273.15 → Mostrar en K
+Si opcion_origen = 2 (Fahrenheit)
+Si opcion_destino = 1 → resultado = (valor_origen - 32) * 5/9 → Mostrar en °C.
+Si opcion_destino = 3 → resultado = (valor_origen - 32) * 5/9 + 273.15 → Mostrar en K.
+Si opcion_origen = 3 (Kelvin)
+Si opcion_destino = 1 → resultado = valor_origen - 273.15 → Mostrar en °C.
+Si opcion_destino = 2 → resultado = (valor_origen - 273.15) * 9/5 + 32 → Mostrar en °F.
+Si ninguna condición es válida → Mostrar "Opción no válida".
+Capturar error de entrada:
+Si ocurre error al ingresar número → Mostrar "Entrada inválida".
+Mostrar mensaje final "--- El programa ha finalizado ---".
+Fin del programa.
